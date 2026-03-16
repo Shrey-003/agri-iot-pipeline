@@ -1,0 +1,6 @@
+db/agri.db
+__pycache__/
+*.pyc
+.cache/
+.antigravity/
+.env
