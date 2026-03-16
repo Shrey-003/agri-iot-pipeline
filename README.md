@@ -3,7 +3,7 @@
 A complete end-to-end data engineering project that simulates IoT sensor data from agricultural fields, processes it through an ETL pipeline, stores it in a SQLite data warehouse, and visualizes it on a real-time interactive dashboard.
 
 ## 🚀 Live Demo
-[👉 Click here to view the dashboard](#) ← (add Streamlit URL after deployment)
+[👉 Click here to view the dashboard](https://agri-iot-pipeline-ny9dmipfappafqkuxcaczip.streamlit.app/)
 
 ## 📌 Features
 - **ETL Pipeline** — generates, transforms & loads 500+ IoT sensor readings
