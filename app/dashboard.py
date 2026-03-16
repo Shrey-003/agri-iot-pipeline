@@ -1,3 +1,14 @@
+import subprocess
+import os
+import sys
+
+# Auto-run ETL on Streamlit Cloud
+os.makedirs("data", exist_ok=True)
+os.makedirs("db", exist_ok=True)
+
+if not os.path.exists("db/agri.db"):
+    subprocess.run([sys.executable, "pipeline/etl.py"], check=True)
+
 import streamlit as st
 import pandas as pd
 import sqlite3
@@ -63,3 +74,4 @@ with col_d:
 st.divider()
 st.subheader("📋 Raw Sensor Readings")
 st.dataframe(filtered.tail(100), use_container_width=True)
+    
